@@ -1,0 +1,13 @@
+# Server
+fastapi
+uvicorn
+
+# S3
+botocore
+boto3
+
+# Postgres
+psycopg2-binary
+
+# Images
+Pillow

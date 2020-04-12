@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    volumes:
+      - db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      # TODO(DAN): use environment variables
+      - POSTGRES_USER=s3http
+      - POSTGRES_PASSWORD=s3http
+      - POSTGRES_DB=s3http
+ 
+volumes:
+  db:
+    driver: local
